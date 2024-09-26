@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="/static/css/linearicons.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <style>
+        .hospital-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hospital-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .location-bar {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-between d-flex">
+                <div id="logo">
+                    <a href="/static/index.html"><img itemprop="image" class="mkdf-normal-logo"
+                            src="/static/img/mainlogo.png" width="208" height="65" alt="logo"></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="/static/index.html">Home</a></li>
+                        <li><a href="/about_us">About Us</a></li>
+                        <li><a href="/category">Category</a></li>
+                        <!-- <li><a href="price.html">Price</a></li> -->
+                        <!-- <li><a href="blog-home.html">Blog</a></li> -->
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                        <!-- <li class="menu-has-children"><a href="">Pages</a> -->
+                        <ul>
+                            <li><a href="/static/elements.html">elements</a></li>
+                            <li><a href="/static/search.html">search</a></li>
+                            <li><a href="/static/single.html">single</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="ticker-btn" href="/static/signup.html">Signup</a></li>
+                        <li><a class="ticker-btn" href="/static/login.html">Login</a></li>
+
+                        <li class="get-app"><a class="get-app-btn" href="" style="width: 100px;">Get App</a></li>
+
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </div>
+    </header><!-- #header -->
+
+
+    <!-- start banner Area -->
+    <section class="banner-area relative" id="home">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row fullscreen d-flex align-items-center justify-content-center">
+                <div class="banner-content col-lg-12">
+                    <h1 class="text-white" id="caption">
+                        The Health care you deserve from a team you can trust
+                    </h1>
+                    <form action="search.html" class="serach-form-area">
+                        <div class="row justify-content-center form-wrap">
+                            <div class="col-lg-4 form-cols">
+                                <input type="text" class="form-control" name="search"
+                                    placeholder="Search Hospitals near your location">
+                            </div>
+
+                            <div class="col-lg-3 form-cols">
+
+                                <div class="default-select" id="default-selects" style="position: relative;">
+                                    <input type="text" class="form-control" id="location-input"
+                                        placeholder="Detecting location..." readonly>
+                                    <i class="fa-solid fa-location-crosshairs" id="location-icon" aria-hidden="true"
+                                        style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"></i>
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 form-cols">
+                                <div class="default-select" id="default-selects2">
+                                    <select>
+                                        <option id="problemSelect" onchange="navigateToPage()">By problem</option>
+                                        <option value="category.html?problem=fever">Feaver </option>
+                                        <option value="category.html?problem=Headache">Headache</option>
+                                        <option value="category.html?problem=emergency">Emergency</option>
+                                        <option value="category.html?problem=stomach-pain">stomach pain</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 form-cols">
+                                <button type="button" class="btn btn-info">
+                                    <span class="lnr lnr-magnifier"></span> Search
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- <p class="text-white"> <span>Search by tags:</span> Tecnology, Business, Consulting, IT Company, Design, Development</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->
+
+    <!-- Start features Area -->
+    <section class="features-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature">
+                        <h4>AI Chat</h4>
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature">
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+                        </div>
+                        <h4>Blood Bank</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature">
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+                        </div>
+                        <h4>Ambulance Services</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature">
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+                        </div>
+                        <h4>Home visit doctor</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End features Area -->
+
+    <!-- Start popular-post Area -->
+    <section class="popular-post-area pt-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="active-popular-post-carusel">
+                    <div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+                        <div class="thumb">
+                            <img class="img-fluid" src="/static/img/p1.png" alt="">
+
+                        </div>
+                        <div class="details">
+                            <a href="#">
+                                <h4>Creative Designer</h4>
+                            </a>
+                            <h6>Los Angeles</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+                                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+                        <div class="thumb">
+                            <img src="/static/img/p2.png" alt="">
+                            <a class="btns text-uppercase" href="#">view job post</a>
+                        </div>
+                        <div class="details">
+                            <a href="#">
+                                <h4>Creative Designer</h4>
+                            </a>
+                            <h6>Los Angeles</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+                                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+                        <div class="thumb">
+                            <img src="img/p1.png" alt="">
+                            <a class="btns text-uppercase" href="#">view job post</a>
+                        </div>
+                        <div class="details">
+                            <a href="#">
+                                <h4>Creative Designer</h4>
+                            </a>
+                            <h6>Los Angeles</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+                                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+                        <div class="thumb">
+                            <img src="/static/img/p2.png" alt="">
+                            <a class="btns text-uppercase" href="#">view job post</a>
+                        </div>
+                        <div class="details">
+                            <a href="#">
+                                <h4>Creative Designer</h4>
+                            </a>
+                            <h6>Los Angeles</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+                                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+                        <div class="thumb">
+                            <img src="/static/img/p1.png" alt="">
+                            <a class="btns text-uppercase" href="#">view job post</a>
+                        </div>
+                        <div class="details">
+                            <a href="#">
+                                <h4>Creative Designer</h4>
+                            </a>
+                            <h6>Los Angeles</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+                                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+                        <div class="thumb">
+                            <img src="/static/img/p2.png" alt="">
+                            <a class="btns text-uppercase" href="#">view job post</a>
+                        </div>
+                        <div class="details">
+                            <a href="#">
+                                <h4>Creative Designer</h4>
+                            </a>
+                            <h6>Los Angeles</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+                                ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End popular-post Area -->
+
+    <!-- Start feature-cat Area -->
+    <section class="feature-cat-area pt-100" id="category ">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-10">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Featured Hospitals near your location</h1>
+                        <p>Discover Leading Hospitals Committed to Your Well-being</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-3">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/general.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>General Hospitals</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/humanheart.jpg" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Cardiology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/hand.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Dermatology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/health.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Neurology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/maternity.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Gynecology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/ortho.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Orthopaedic</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row m-3" id="category-2" style="display: none;">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/oncology.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Oncology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/pulmonology.webp" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Pulmonology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/eye.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Ophthalmology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/nephrology.webp" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Nephrology</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/hepatology.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Heptalogy</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="single-fcat">
+                        <a href="category.html">
+                            <img src="/static/img/gastro.png" alt="" width="60px" height="60px">
+                        </a>
+                        <p>Gastroenterology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End feature-cat Area -->
+    <!-- show button  -->
+    <div class="d-flex justify-content-center align-items-center m-4">
+        <button class="btn btn-primary" id="showbtn">Show All</button>
+    </div>
+    <!-- show button  -->
+
+    <!-- Start post Area -->
+    <section class="post-area section-gap">
+        <div class="container">
+            <div class="row justify-content-center d-flex">
+                <div class="col-lg-8 post-list">
+                    <div class="hospital-list">
+                        {% if hospitals %}
+                        {% for hospital in hospitals %}
+                        <div class="hospital-item">
+                            <div class="thumb">
+                                <img src="/static/img/post.png" alt="">
+                                <ul class="tags">
+                                    <li><a href="#">Call</a></li>
+                                    <li><a href="#">Chat</a></li>
+                                    <li><a href="#">Book Appointment</a></li>
+                                </ul>
+                            </div>
+                            <div class="details">
+                                <div class="title d-flex flex-row justify-content-between">
+                                    <div class="titles">
+                                        <a href="/static/single.html">
+                                            <h4>{{hospital.hospital_name}}</h4>
+                                        </a>
+                                        <h6>Available Now</h6>
+                                    </div>
+                                    <ul class="btns">
+                                        <li><a href="#"><span class="lnr lnr-heart"></span></a></li>
+                                        <li><a href="#">View</a></li>
+                                    </ul>
+                                </div>
+                                <p>This Hospital deals with normal fever, viral fever, dog bites emergencies.</p>
+                                <h5>{{hospital.years_since_established}} years in health care</h5>
+                                <p class="address"><i class="fa-solid fa-location-dot"></i> {{hospital.distance}} km</p>
+                                <p class="address">Op price(<i class="fa-solid fa-indian-rupee-sign"></i>
+                                    {{hospital.opcard_price}})</p>
+                                <p class="address">Op 100-200 <i class="fa-solid fa-chart-line"></i> &nbsp; (Op current
+                                    status)</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <p>No nearby hospitals found within 5km of your location.</p>
+                        {% endif %}
+                    </div>
+                    <a class="text-uppercase loadmore-btn mx-auto d-block" href="category.html">Load More hospitals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start callto-action Area -->
+    <section class="callto-action-area section-gap">
+        <div class="container">
+            <section class="popular-post-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="active-popular-post-carusel">
+                            <div class="single-popular-post d-flex flex-row">
+
+                                <div class="details">
+                                    <h3>Your Health, Our Priority </h3>
+
+                                    <h5>Explore our list of hospitals committed to providing exceptional healthcare.
+                                    </h5>
+
+                                </div>
+                            </div>
+                            <div class="single-popular-post d-flex flex-row">
+
+                                <div class="details">
+                                    <h3>Trusted Hospitals, Trusted Care </h3>
+
+                                    <h5>Find the best hospitals that deliver quality healthcare services you can rely on
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="single-popular-post d-flex flex-row">
+
+                                <div class="details">
+                                    <h3>Your Health, Your Choice</h3>
+
+                                    <h5>Choose from the finest hospitals with confidence.</h5>
+                                </div>
+                            </div>
+                            <div class="single-popular-post d-flex flex-row">
+
+                                <div class="details">
+                                    <h3>Your Health, Our Priority </h3>
+
+                                    <h5>Explore our list of hospitals committed to providing exceptional healthcare.
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="single-popular-post d-flex flex-row">
+
+                                <div class="details">
+
+                                    <h3>Expert Care, Every Timee </h3>
+
+                                    <h5>Discover hospitals that prioritize your well-being with top-notch care and a
+                                        personal touch.</h5>
+                                </div>
+                            </div>
+                            <div class="single-popular-post d-flex flex-row">
+
+                                <div class="details">
+                                    <h3>Your Health, Our Priority </h3>
+
+                                    <h5>Connect with hospitals that deliver excellence in healthcare.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- End calto-action Area -->
+    <!-- start footer Area -->
+    <footer>
+        <div class="bg-dark">
+            <div class="row footer-bottom align-items-center justify-content-between">
+                <div class="footer-text">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved by BAtalks
+                </div>
+                <a href="mailto:contact@batalks.com" class="mx-2">
+                    <i class="fa fa-envelope-square" style="font-size:24px"></i>
+                    <span>contact@batalks.com</span>
+                </a>
+                <a href="tel:+918341322771" class="mx-2">
+                    <i class="fa fa-phone" style="font-size:24px"></i>
+                    <span>+918341322771</span>
+                </a>
+                <div class="d-flex">
+                    <a href="https://www.facebook.com/people/BA-Talks/61561068777682/" target="_blank" class="mx-2">
+                        <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    </a>
+                    <a href="https://www.instagram.com/batalkspvtltd/" target="_blank" class="mx-2">
+                        <i class="fa fa-instagram" style="font-size:24px"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B918341322771&text&type=phone_number&app_absent=0"
+                        target="_blank" class="mx-2">
+                        <i class="fa fa-whatsapp" style="font-size:24px"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/ba-talks-pvt-ltd/" target="_blank" class="mx-2">
+                        <i class="fa fa-linkedin" style="font-size:24px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/static/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="/static/js/easing.min.js"></script>
+    <script src="/static/js/hoverIntent.js"></script>
+    <script src="/static/js/superfish.min.js"></script>
+    <script src="/static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.sticky.js"></script>
+    <script src="/static/js/jquery.nice-select.min.js"></script>
+    <script src="/static/js/parallax.min.js"></script>
+    <script src="/static/js/mail-script.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const locationInput = document.getElementById('location-input');
+            const locationIcon = document.getElementById('location-icon');
+
+            if (navigator.geolocation) {
+                locationIcon.addEventListener('click', function () {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        const userLat = position.coords.latitude;
+                        const userLon = position.coords.longitude;
+
+                        // Fetch the location details from a reverse geocoding API
+                        fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${userLat},${userLon}&key=YOUR_API_KEY`)
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.results.length > 0) {
+                                    const address = data.results[0].formatted_address;
+                                    locationInput.value = address;
+                                } else {
+                                    locationInput.value = "Unable to determine location";
+                                }
+                            });
+
+                        // You might want to send the coordinates to the server if needed
+                        fetch(`/?latitude=${userLat}&longitude=${userLon}`)
+                            .then(response => response.text())
+                            .then(data => {
+                                document.querySelector('body').innerHTML = data;
+                            });
+                    }, function (error) {
+                        alert("Unable to retrieve your location. Please try again.");
+                    });
+                });
+            } else {
+                locationInput.value = "Geolocation is not supported by this browser.";
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('showbtn').addEventListener('click', function () {
+            var hiddenCategories = document.getElementById('category-2');
+            if (hiddenCategories.style.display === 'none') {
+                hiddenCategories.style.display = 'flex'; // Shows the hidden categories
+                this.textContent = 'Show Less'; // Changes button text
+            } else {
+                hiddenCategories.style.display = 'none'; // Hides the categories again
+                this.textContent = 'Show All'; // Resets button text
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const locationInput = document.getElementById('location-input');
+
+            // Check if geolocation is supported
+            if (navigator.geolocation) {
+                console.log('Geolocation is supported. Fetching location...');
+                navigator.geolocation.getCurrentPosition(success, error);
+            } else {
+                locationInput.value = 'Geolocation not supported';
+                console.log('Geolocation is not supported by this browser.');
+            }
+
+            function success(position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+
+                // Reverse geocoding using BigDataCloud API
+                fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const locality = data.locality; // Neighborhood or locality
+                        const principalSubdivision = data.principalSubdivision; // State or region
+
+                        console.log('Detected locality:', locality);
+                        console.log('Detected principalSubdivision:', principalSubdivision);
+
+                        // Set the detected locality in the input field
+                        if (locality) {
+                            locationInput.value = `${locality}, ${principalSubdivision}`;
+                        } else {
+                            locationInput.value = 'Location not found';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error in reverse geocoding:', error);
+                        locationInput.value = 'Error detecting location';
+                    });
+            }
+
+            function error(err) {
+                console.warn(`ERROR(${err.code}): ${err.message}`);
+                locationInput.value = 'Unable to detect location';
+            }
+        });
+
+        // Header links by problem
+        function navigateToPage() {
+            var select = document.getElementById("problemSelect");
+            var selectedValue = select.options[select.selectedIndex].value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    
+    <!-- Font Awesome and Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/linearicons.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <!-- Inline CSS for additional styling -->
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #ff9980; /* Background color updated */
+            color: #343a40;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #logo img {
+            max-height: 50px;
+        }
+        nav#nav-menu-container {
+            display: flex;
+            align-items: center;
+        }
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-menu li {
+            margin: 0 15px;
+        }
+        .nav-menu a {
+            padding: 8px 15px;
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #17a2b8;
+        }
+        .container {
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #17a2b8;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .profile-section, .password-section {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #17a2b8;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #138496;
+        }
+        #favourites ul {
+            list-style: none;
+            padding: 0;
+        }
+        #favourites li {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #favourites h3 {
+            margin-top: 0;
+            color: #17a2b8;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .ticker-btn {
+            background: #49e4fa;
+            color: #fff;
+            padding: 6px 20px !important;
+            text-transform: uppercase;
+        }
+
+        .ticker-btn:hover {
+            background: rgba(73, 228, 250, 0.2);
+            color: #49e4fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div id="logo">
+                <a href="index.html"><img itemprop="image" class="mkdf-normal-logo" src="/static/img/mainlogo.png" width="208" height="65" alt="logo"></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    {% if 'username' in session %}
+                        <li><a class="ticker-btn" href="/logout">Logout</a></li>
+                    {% else %}
+                        <li><a class="ticker-btn" href="login.html">Login</a></li>
+                    {% endif %}
+                    <li class="get-app"><a class="get-app-btn" href="#" style="width: 100px;">Get App</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>User Profile</h1>
+        
+        <!-- Profile Information -->
+        <section id="profile-info" class="profile-section">
+            {% if 'username' in session %}
+            <h2>
+            Welcome to your Dashboard, {{ session.username }}!
+            </h2>
+            {% else %}
+            {% endif %}
+            <form action="{{ url_for('update_profile') }}" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="{{ session['username'] }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="{{ user_email }}" required>
+                </div>
+                <!-- Add more fields as necessary -->
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+
+        <!-- Change Password -->
+        <section id="change-password" class="password-section">
+            <h2>Change Password</h2>
+            <form action="{{ url_for('update_profile') }}" method="post">
+                <div class="form-group">
+                    <label for="current_password">Current Password:</label>
+                    <input type="password" id="current_password" name="current_password" required>
+                </div>
+                <div class="form-group">
+                    <label for="new_password">New Password:</label>
+                    <input type="password" id="new_password" name="new_password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm New Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+                <button type="submit">Change Password</button>
+            </form>
+        </section>
+
+        <!-- Display favorite hospitals -->
+        <section id="favourites">
+            <li><a class="ticker-btn" href="/favourite">Favourite Hospitals</a></li>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

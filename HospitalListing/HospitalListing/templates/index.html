@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Job Listing</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
+							CSS
+							============================================= -->
+	<link rel="stylesheet" href="/static/css/linearicons.css">
+	<link rel="stylesheet" href="/static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/magnific-popup.css">
+	<link rel="stylesheet" href="/static/css/nice-select.css">
+	<link rel="stylesheet" href="/static/css/animate.min.css">
+	<link rel="stylesheet" href="/static/css/owl.carousel.css">
+	<link rel="stylesheet" href="/static/css/main.css">
+	<style>
+		body {
+			overflow-x: hidden;
+		}
+
+		.single-feature {
+			position: relative;
+		}
+
+		#prem {
+			position: absolute;
+			bottom: 60px;
+			left: 180px;
+		}
+
+		.badge-icon {
+			position: absolute;
+			top: -10px;
+			right: -10px;
+
+			border-radius: 50%;
+			padding: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.single-feature {
+			position: relative;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			background-color: #fff;
+		}
+
+		.nav-menu a {
+			padding: 6px 10px;
+			text-decoration: none;
+			display: inline-block;
+			color: #fff;
+			font-weight: 400;
+			font-size: 16px;
+			text-transform: uppercase;
+			outline: none;
+		}
+
+		.sticky {
+
+			position: sticky;
+
+			bottom: 0;
+			padding: 5px;
+			margin: 10px;
+			width: 300px;
+			float: right;
+		}
+
+		.sticky h1 {
+			color: orangered;
+		}
+
+		.section-gap {
+			padding: 50px 0;
+		}
+
+		.single-popular-post {
+			background-color: lavender;
+			padding: 50px;
+			color: #000;
+		}
+
+		.single-popular-post h1 {
+			color: #000;
+		}
+
+		.get-app {
+			margin-left: 10px;
+		}
+
+		/* Styling for the Get App now button */
+		.get-app-btn {
+			display: inline-block;
+			padding: 10px 10px;
+			background-color: #ff5722;
+			/* Change to your preferred color */
+			color: #fff;
+			border-radius: 50px;
+			/* Rounded appearance */
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			margin-left: 15px;
+			text-transform: lowercase;
+			transition: background-color 0.3s ease;
+		}
+
+		/* Hover effect */
+		.get-app-btn:hover {
+			background-color: #e64a19;
+			/* Slightly darker color for hover state */
+		}
+
+		/* Additional adjustments for Get App now button */
+		.get-app {
+			margin-left: auto;
+			/* Pushes the Get App button to the far right */
+		}
+
+		.get-app-btn:focus {
+			outline: none;
+			box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.5);
+			/* Optional focus state styling */
+		}
+
+		.register-btn {
+			display: inline-block;
+			padding: 10px 20px;
+			width: 400px;
+			background: orangered;
+			/* Gradient background */
+			color: #fff;
+			border: none;
+			border-radius: 25px;
+			/* Rounded corners */
+			font-size: 16px;
+			text-align: center;
+			text-decoration: none;
+			transition: background 0.3s ease, transform 0.3s ease;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			/* Subtle shadow */
+		}
+
+		.register-btn:hover {
+			background: orangered;
+			/* Reverse gradient on hover */
+			transform: translateY(-2px);
+			/* Lift effect on hover */
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+			/* Enhance shadow on hover */
+		}
+
+		.get-app-btn:hover {
+			background: orangered;
+			/* Reverse gradient on hover */
+			transform: translateY(-2px);
+			/* Lift effect on hover */
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+			/* Enhance shadow on hover */
+		}
+
+		.register-btn:active {
+			transform: translateY(0);
+			/* Remove lift effect when clicking */
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			/* Restore original shadow */
+		}
+
+		.get-app-btn,
+		.register-btn {
+			display: inline-block;
+			background-color: #ff9800;
+			/* Original background color */
+			color: white;
+			border-radius: 20px;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			font-size: 16px;
+		}
+
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+
+			.get-app-btn,
+			.register-btn {
+				background-color: transparent;
+				color: #333;
+				/* Use a standard text color */
+				border: none;
+				/* Remove border */
+				padding: 0;
+				/* Remove padding */
+				margin-left: 0;
+				text-align: left;
+				font-size: 14px;
+				/* Slightly smaller font */
+			}
+
+			.get-app-btn:hover,
+			.register-btn:hover {
+				text-decoration: underline;
+				/* Add underline on hover for better interaction feedback */
+			}
+
+			.get-app,
+			.register {
+				margin: 10px 0;
+				width: 0;
+
+			}
+
+			.nav-menu li {
+				margin: 5px 0;
+				display: block;
+				text-align: center;
+			}
+		}
+
+
+		/* Footer Base Styling */
+		/* Base Styling for Footer */
+		/* Base Styling for Footer */
+		/* Base Styling for Footer */
+		/* Base Styling for Footer */
+		footer {
+			background-color: #343a40;
+			/* Dark background color */
+			color: #fff;
+			/* White text color */
+			padding: 20px 20px;
+			/* Vertical padding */
+		}
+
+		.footer-bottom {
+			display: flex;
+			flex-wrap: nowrap;
+			/* Prevents wrapping on larger screens */
+			align-items: center;
+			justify-content: space-between;
+			/* Space between items */
+			padding: 10px 0;
+			/* Vertical padding */
+			text-align: left;
+			/* Left-align text by default */
+		}
+
+		.footer-text {
+			margin: 0;
+			font-size: 14px;
+			flex: 1;
+			/* Takes available space without forcing new lines */
+		}
+
+		.footer-bottom .d-flex {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			/* Aligns items to the right */
+			flex-wrap: nowrap;
+			/* Prevents wrapping on larger screens */
+		}
+
+		.footer-bottom .mx-2 {
+			margin: 0 8px;
+			/* Margin between icons and text */
+		}
+
+		.footer-bottom .text-white {
+			color: #fff;
+		}
+
+
+		/* Responsive Styling */
+		@media (max-width: 768px) {
+			.footer-bottom {
+				flex-direction: column;
+				/* Stack elements vertically on small screens */
+				gap: 5px;
+				/* Reduce gap for small screens */
+			}
+
+			.footer-bottom a {
+				margin: 5px 0;
+				/* Adjust margin for small screens */
+			}
+
+			.footer-bottom .d-flex {
+				justify-content: center;
+				/* Center the social icons on small screens */
+				margin-top: 5px;
+				/* Adjust top margin */
+			}
+		}
+
+
+		@media (min-width: 768px) {
+			.single-popular-post {
+				flex-direction: row;
+				/* Side-by-side on larger screens */
+				align-items: center;
+			}
+
+			.details h3 {
+				font-size: 20px;
+			}
+
+			.details h5 {
+				font-size: 18px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.single-popular-post {
+				width: 100%;
+				/* Ensure it takes up full width on small screens */
+			}
+
+			.details h3 {
+				font-size: 20px;
+			}
+
+			.details h5 {
+				font-size: 14px;
+			}
+		}
+
+		/* Keyframes for fadeInUp animation */
+		@-webkit-keyframes fadeInUp {
+			from {
+				opacity: 0;
+				-webkit-transform: translate3d(0, 100%, 0);
+				transform: translate3d(0, 100%, 0);
+			}
+
+			to {
+				opacity: 1;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				-webkit-transform: translate3d(0, 100%, 0);
+				transform: translate3d(0, 100%, 0);
+			}
+
+			to {
+				opacity: 1;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		/* Animation class */
+		.fadeInUp {
+			-webkit-animation-name: fadeInUp;
+			animation-name: fadeInUp;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+			/* animation-delay: 12s; */
+			/* animation-iteration-count: infinite; */
+		}
+
+		.fadeInLeft {
+			-webkit-animation-name: fadeInLeft;
+			animation-name: fadeInLeft;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+			/* animation-delay: 12s; */
+			/* animation-iteration-count: infinite; */
+		}
+
+		.fadeInLeft.show {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+
+		.fadeInUp {
+			-webkit-animation-name: fadeInUp;
+			animation-name: fadeInUp;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+		}
+
+		@-webkit-keyframes fadeInLeft {
+			from {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+			}
+
+			to {
+				opacity: 1;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		@keyframes fadeInLeft {
+			from {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+			}
+
+			to {
+				opacity: 1;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		.fadeInLeft {
+			-webkit-animation-name: fadeInLeft;
+			animation-name: fadeInLeft;
+		}
+
+		.language-switcher-card {
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			padding: 10px;
+			background-color: #f9f9f9;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			max-width: 300px;
+			margin: 0 auto;
+			position: absolute;
+			top: 10px;
+			right: 3px;
+		}
+
+		.language-switcher-card h3 {
+			margin-bottom: 10px;
+		}
+
+		.language-switcher-card button {
+			background-color: rgb(119, 119, 227);
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			padding: 6px 12px;
+			margin: 2px;
+			cursor: pointer;
+			font-size: 12px;
+		}
+
+		.language-switcher-card button:hover {
+			background-color: rgb(102, 102, 221);
+		}
+
+		/* CSS for the hospital list */
+		.hospital-list {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.hospital-item {
+			display: flex;
+			border: 1px solid #e0e0e0;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.hospital-item .thumb {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			background-color: #f8f8f8;
+		}
+
+		.hospital-item .thumb img {
+			max-width: 100px;
+			height: auto;
+			margin-bottom: 20px;
+		}
+
+		.hospital-item .thumb ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.hospital-item .thumb ul li {
+			margin: 0;
+		}
+
+		.hospital-item .thumb ul li a {
+			display: block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			text-align: center;
+			border-radius: 4px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+
+		.hospital-item .thumb ul li a:hover {
+			background-color: #0056b3;
+		}
+
+		.hospital-item .details {
+			flex: 2;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.hospital-item .details .title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.hospital-item .details .title .titles {
+			flex-grow: 1;
+		}
+
+		.hospital-item .details .title .titles a {
+			text-decoration: none;
+			color: #333;
+		}
+
+		.hospital-item .details .title .titles a h4 {
+			margin: 0;
+			font-size: 1.5em;
+		}
+
+		.hospital-item .details .title .titles h6 {
+			margin: 5px 0 0;
+			font-size: 1em;
+			color: #999;
+		}
+
+		.hospital-item .details .btns {
+			display: flex;
+			align-items: center;
+		}
+
+		.hospital-item .details .btns li {
+			list-style: none;
+			margin-left: 10px;
+		}
+
+		.hospital-item .details .btns li form {
+			display: inline;
+		}
+
+		.hospital-item .details .btns li form button {
+			background: none;
+			border: none;
+			cursor: pointer;
+			font-size: 1.2em;
+			color: #ff0000;
+		}
+
+		.hospital-item .details p {
+			margin: 5px 0;
+		}
+
+		.hospital-item .details h5 {
+			font-size: 1.2em;
+			margin: 10px 0;
+		}
+
+		.hospital-item .details p.address {
+			display: flex;
+			align-items: center;
+			font-size: 1em;
+		}
+
+		.hospital-item .details p.address i {
+			margin-right: 5px;
+			color: #999;
+		}
+	</style>
+</head>
+
+c<body>
+
+	<header id="header" id="home">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="/"><img itemprop="image" class="mkdf-normal-logo" src="/static/img/mainlogo.png" width="208" height="65" alt="logo"></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="/">Home</a></li>
+					<li><a href="/about_us">About Us</a></li>
+						<li><a href="/category">Category</a></li>
+	
+						{% if 'username' in session %}
+							<!-- User is logged in -->
+							<li><a href="/logout">Logout</a></li>
+							<li><a class="get-app-btn" href="/profile" style="width:100px;">My Profile</a></li>
+							<li class="get-app"><a class="get-app-btn" href="" style="width: 100px;">Get App</a></li>
+							<li class="register"><a class="register-btn " href="/register" style="width:200px;">Register for free</a></li>
+						{% else %}
+							<!-- User is not logged in -->
+							<li><a class="ticker-btn" href="/signup">Signup</a></li>
+							<li><a class="ticker-btn" href="/login">Login</a></li>
+							<li class="get-app"><a class="get-app-btn" href="" style="width: 100px;">Get App</a></li>
+							<li class="register"><a class="register-btn " href="/register" style="width:200px;">Register for free</a></li>
+						{% endif %}
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header><!-- #header -->
+
+
+	<!-- start banner Area -->
+	<section class="banner-area relative" id="home">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row fullscreen d-flex align-items-center justify-content-center">
+				<div class="banner-content col-lg-12 fadeInUp">
+					{% if 'username' in session %}
+						<h2 class="text-white" id="caption">
+						Welcome to you, {{ session.username }}!
+						</h2>
+					{% else %}
+					{% endif %}
+					<h1 class="text-white" id="caption">
+						The Health care you deserve from a team you can trust
+					</h1>
+					<form action="search.html" class="serach-form-area">
+						<div class="row justify-content-center form-wrap">
+							<div class="col-lg-4 form-cols">
+								<input type="text" class="form-control" name="search"
+									placeholder="Search Hospitals near your location">
+							</div>
+
+							<div class="col-lg-3 form-cols">
+
+								<div class="default-select" id="default-selects" style="position: relative;">
+									<input type="text" class="form-control" id="location-input"
+										placeholder="Detecting location..." readonly>
+									<i class="fa-solid fa-location-crosshairs" id="location-icon" aria-hidden="true"
+										style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"></i>
+								</div>
+
+							</div>
+							<div class="col-lg-3 form-cols">
+								<div class="default-select" id="default-selects2">
+									<select>
+										<option id="problemSelect" onchange="navigateToPage()">By problem</option>
+										<option value="/category?problem=fever">Feaver </option>
+										<option value="/category?problem=Headache">Headache</option>
+										<option value="/category?problem=emergency">Emergency</option>
+										<option value="/category?problem=stomach-pain">stomach pain</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-2 form-cols">
+								<button type="button" class="btn btn-info">
+									<span class="lnr lnr-magnifier"></span> Search
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- <p class="text-white"> <span>Search by tags:</span> Tecnology, Business, Consulting, IT Company, Design, Development</p> -->
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start features Area -->
+	<section class="features-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="single-feature fadeInUp">
+						<h4>AI Chat</h4>
+						<div class="badge-icon">
+							<i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-feature fadeInUp">
+						<div class="badge-icon">
+							<i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+						</div>
+						<h4>Blood Bank</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-feature fadeInUp">
+						<div class="badge-icon">
+							<i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+						</div>
+						<h4>Ambulance Services</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-feature fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+						<div class="badge-icon">
+							<i class="fa-solid fa-crown" style="color: gold; font-size:30px;"></i>
+						</div>
+						<h4>Home visit doctor</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End features Area -->
+
+	<!-- Start popular-post Area -->
+	<section class="popular-post-area pt-100">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="active-popular-post-carusel">
+					<div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+						<div class="thumb">
+							<img class="img-fluid" src="/static/img/p1.png" alt="">
+
+						</div>
+						<div class="details">
+							<a href="#">
+								<h4>Creative Designer</h4>
+							</a>
+							<h6>Los Angeles</h6>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+								ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+							</p>
+						</div>
+					</div>
+					<div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+						<div class="thumb">
+							<img src="/static/img/p2.png" alt="">
+							<a class="btns text-uppercase" href="#">view job post</a>
+						</div>
+						<div class="details">
+							<a href="#">
+								<h4>Creative Designer</h4>
+							</a>
+							<h6>Los Angeles</h6>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+								ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+							</p>
+						</div>
+					</div>
+					<div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+						<div class="thumb">
+							<img src="/static/img/p1.png" alt="">
+							<a class="btns text-uppercase" href="#">view job post</a>
+						</div>
+						<div class="details">
+							<a href="#">
+								<h4>Creative Designer</h4>
+							</a>
+							<h6>Los Angeles</h6>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+								ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+							</p>
+						</div>
+					</div>
+					<div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+						<div class="thumb">
+							<img src="/static/img/p2.png" alt="">
+							<a class="btns text-uppercase" href="#">view job post</a>
+						</div>
+						<div class="details">
+							<a href="#">
+								<h4>Creative Designer</h4>
+							</a>
+							<h6>Los Angeles</h6>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+								ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+							</p>
+						</div>
+					</div>
+					<div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+						<div class="thumb">
+							<img src="/static/img/p1.png" alt="">
+							<a class="btns text-uppercase" href="#">view job post</a>
+						</div>
+						<div class="details">
+							<a href="#">
+								<h4>Creative Designer</h4>
+							</a>
+							<h6>Los Angeles</h6>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+								ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+							</p>
+						</div>
+					</div>
+					<div class="single-popular-post d-flex flex-row" style="background-color: #000;">
+						<div class="thumb">
+							<img src="/static/img/p2.png" alt="">
+							<a class="btns text-uppercase" href="#">view job post</a>
+						</div>
+						<div class="details">
+							<a href="#">
+								<h4>Creative Designer</h4>
+							</a>
+							<h6>Los Angeles</h6>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc
+								ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End popular-post Area -->
+
+	<!-- Start feature-cat Area -->
+	<section class="feature-cat-area pt-100 fadeInLeft" id="category " style="animation-name: fadeInLeft;">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-10">
+					<div class="title text-center">
+						<h1 class="mb-10">Featured Hospitals near your location</h1>
+						<p>Discover Leading Hospitals Committed to Your Well-being</p>
+					</div>
+				</div>
+			</div>
+			<div class="row m-3">
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=general">
+							<img src="/static/img/general.png" alt="" width="60px" height="60px">
+							
+						</a>
+						<p>General Hospitals</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=cardiology">
+							<img src="/static/img/humanheart.jpg" alt="" width="60px" height="60px">
+						</a>
+						<p>Cardiology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=dermatology">
+							<img src="/static/img/hand.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Dermatology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=neurology">
+							<img src="/static/img/health.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Neurology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=gynecology">
+							<img src="/static/img/maternity.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Gynecology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=orthopaedic">
+							<img src="/static/img/ortho.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Orthopaedic</p>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="row m-3" id="category-2" style="display: none;">
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=onocology">
+							<img src="/static/img/oncology.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Oncology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=pulmonology">
+							<img src="/static/img/pulmonology.webp" alt="" width="60px" height="60px">
+						</a>
+						<p>Pulmonology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=opthalmology">
+							<img src="/static/img/eye.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Ophthalmology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=nephrology">
+							<img src="/static/img/nephrology.webp" alt="" width="60px" height="60px">
+						</a>
+						<p>Nephrology</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=heptaology">
+							<img src="/static/img/hepatology.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Heptalogy</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="single-fcat">
+						<a href="/category?type=gastroenterology">
+							<img src="/static/img/gastro.png" alt="" width="60px" height="60px">
+						</a>
+						<p>Gastroenterology</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End feature-cat Area -->
+	<!-- show button  -->
+	<div class="d-flex justify-content-center align-items-center m-4">
+		<button class="btn btn-primary" id="showbtn">Show All</button>
+	</div>
+	<!-- show button  -->
+
+	<!-- Start post Area -->
+	<section class="post-area section-gap">
+		<div class="container">
+			<div class="row justify-content-center d-flex">
+				<div class="col-lg-8 post-list">
+					<div class="hospital-list">
+						<!-- Hospitals will be dynamically inserted here -->
+					</div>
+					<a class="text-uppercase loadmore-btn mx-auto d-block" href="/">Load More hospitals</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- Start callto-action Area -->
+	<section class="callto-action-area section-gap">
+		<div class="container">
+			<section class="popular-post-area">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="active-popular-post-carusel">
+							<div class="single-popular-post d-flex flex-row">
+
+								<div class="details">
+									<h3>Your Health, Our Priority </h3>
+
+									<h5>Explore our list of hospitals committed to providing exceptional healthcare.
+									</h5>
+
+								</div>
+							</div>
+							<div class="single-popular-post d-flex flex-row">
+
+								<div class="details">
+									<h3>Trusted Hospitals, Trusted Care </h3>
+
+									<h5>Find the best hospitals that deliver quality healthcare services you can rely on
+									</h5>
+								</div>
+							</div>
+							<div class="single-popular-post d-flex flex-row">
+
+								<div class="details">
+									<h3>Your Health, Your Choice</h3>
+
+									<h5>Choose from the finest hospitals with confidence.</h5>
+								</div>
+							</div>
+							<div class="single-popular-post d-flex flex-row">
+
+								<div class="details">
+									<h3>Your Health, Our Priority </h3>
+
+									<h5>Explore our list of hospitals committed to providing exceptional healthcare.
+									</h5>
+								</div>
+							</div>
+							<div class="single-popular-post d-flex flex-row">
+
+								<div class="details">
+
+									<h3>Expert Care, Every Timee </h3>
+
+									<h5>Discover hospitals that prioritize your well-being with top-notch care and a
+										personal touch.</h5>
+								</div>
+							</div>
+							<div class="single-popular-post d-flex flex-row">
+
+								<div class="details">
+									<h3>Your Health, Our Priority </h3>
+
+									<h5>Connect with hospitals that deliver excellence in healthcare.</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<!-- End calto-action Area -->
+	<!-- start footer Area -->
+	<footer>
+		<div class="bg-dark">
+			<div class="row footer-bottom align-items-center justify-content-between">
+				<div class="footer-text">
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved by BAtalks
+				</div>
+				<a href="mailto:contact@batalks.com" class="mx-2">
+					<i class="fa fa-envelope-square" style="font-size:24px"></i>
+					<span>contact@batalks.com</span>
+				</a>
+				<a href="tel:+918341322771" class="mx-2">
+					<i class="fa fa-phone" style="font-size:24px"></i>
+					<span>+918341322771</span>
+				</a>
+				<div class="d-flex">
+					<a href="https://www.facebook.com/people/BA-Talks/61561068777682/" target="_blank" class="mx-2">
+						<i class="fa fa-facebook-f" style="font-size:24px"></i>
+					</a>
+					<a href="https://www.instagram.com/batalkspvtltd/" target="_blank" class="mx-2">
+						<i class="fa fa-instagram" style="font-size:24px"></i>
+					</a>
+					<a href="https://api.whatsapp.com/send/?phone=%2B918341322771&text&type=phone_number&app_absent=0"
+						target="_blank" class="mx-2">
+						<i class="fa fa-whatsapp" style="font-size:24px"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/ba-talks-pvt-ltd/" target="_blank" class="mx-2">
+						<i class="fa fa-linkedin" style="font-size:24px"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="/static/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="/static/js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="/static/js/easing.min.js"></script>
+	<script src="/static/js/hoverIntent.js"></script>
+	<script src="/static/js/superfish.min.js"></script>
+	<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+	<script src="/static/js/jquery.magnific-popup.min.js"></script>
+	<script src="/static/js/owl.carousel.min.js"></script>
+	<script src="/static/js/jquery.sticky.js"></script>
+	<script src="/static/js/jquery.nice-select.min.js"></script>
+	<script src="/static/js/parallax.min.js"></script>
+	<script src="/static/js/mail-script.js"></script>
+	<script src="/static/js/main.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY"></script>
+
+
+	<script>
+		window.onload = function () {
+			getLocation();
+		};
+
+		// Function to get user's current location
+		function getLocation() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition, showError);
+			} else {
+				alert("Geolocation is not supported by this browser.");
+			}
+		}
+
+		// Callback function on success
+		// Callback function on success
+		function showPosition(position) {
+			const latitude = position.coords.latitude;
+			const longitude = position.coords.longitude;
+
+			// Print latitude and longitude to the console
+			console.log("Latitude: " + latitude);
+			console.log("Longitude: " + longitude);
+
+			// Send user location to the backend
+			fetch('/', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					latitude: latitude,
+					longitude: longitude
+				})
+			})
+				.then(response => {
+					if (!response.ok) {
+						throw new Error('Network response was not ok.');
+					}
+					return response.json();  // Expecting JSON data from the server
+				})
+				.then(hospitals => {
+					console.log("Received data from server:", hospitals);  // Check what you are receiving
+					displayHospitals(hospitals);  // Update the UI with hospital data
+				})
+				.catch(error => console.error('Error:', error));
+		}
+
+		// Display the nearby hospitals
+		function displayHospitals(hospitals) {
+			const hospitalList = document.querySelector('.hospital-list');
+			hospitalList.innerHTML = '';
+
+			if (hospitals.length === 0) {
+				hospitalList.innerHTML = '<p>No nearby hospitals found within 5km of your location.</p>';
+			} else {
+				hospitals.forEach(hospital => {
+					const hospitalItem = `
+	                    <div class="hospital-item">
+	                        <div class="thumb">
+	                            <img src="/static/img/post.png" alt="">
+	                            <ul class="tags">
+	                                <li><a href="#">Call</a></li>
+	                                <li><a href="#">Chat</a></li>
+	                                <li><a href="#">Book Appointment</a></li>
+	                            </ul>
+	                        </div>
+	                        <div class="details">
+	                            <div class="title d-flex flex-row justify-content-between">
+	                                <div class="titles">
+	                                        <h4>${hospital.hospital_name}</h4>
+	                                    <h6>Available Now</h6>
+	                                </div>
+	                            </div>
+	                            <p>This hospital deals with normal fever, viral fever, and emergencies.</p>
+	                            <h5>${hospital.years_since_established} years in healthcare</h5>
+	                            <p class="address"><i class="fa-solid fa-location-dot"></i> ${hospital.distance} km</p>
+	                            <p class="address">Op price(<i class="fa-solid fa-indian-rupee-sign"></i> ${hospital.opcard_price})</p>
+	                            <p class="address">Op 100-200 <i class="fa-solid fa-chart-line"></i> &nbsp; (Op current status)</p>
+	                        </div>
+	                    </div>`;
+					hospitalList.innerHTML += hospitalItem;
+				});
+			}
+		}
+
+		// Handle errors in geolocation
+		function showError(error) {
+			switch (error.code) {
+				case error.PERMISSION_DENIED:
+					alert("User denied the request for Geolocation.");
+					break;
+				case error.POSITION_UNAVAILABLE:
+					alert("Location information is unavailable.");
+					break;
+				case error.TIMEOUT:
+					alert("The request to get user location timed out.");
+					break;
+				case error.UNKNOWN_ERROR:
+					alert("An unknown error occurred.");
+					break;
+			}
+		}
+	</script>
+
+	<script>
+		document.getElementById('showbtn').addEventListener('click', function () {
+			var hiddenCategories = document.getElementById('category-2');
+			if (hiddenCategories.style.display === 'none') {
+				hiddenCategories.style.display = 'flex'; // Shows the hidden categories
+				this.textContent = 'Show Less'; // Changes button text
+			} else {
+				hiddenCategories.style.display = 'none'; // Hides the categories again
+				this.textContent = 'Show All'; // Resets button text
+			}
+		});
+		
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const locationInput = document.getElementById('location-input');
+
+			// Check if geolocation is supported
+			if (navigator.geolocation) {
+				console.log('Geolocation is supported. Fetching location...');
+				navigator.geolocation.getCurrentPosition(success, error);
+			} else {
+				locationInput.value = 'Geolocation not supported';
+				console.log('Geolocation is not supported by this browser.');
+			}
+
+			function success(position) {
+				const latitude = position.coords.latitude;
+				const longitude = position.coords.longitude;
+
+				console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+
+				// Reverse geocoding using BigDataCloud API
+				fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
+					.then(response => {
+						if (!response.ok) {
+							throw new Error('Network response was not ok');
+						}
+						return response.json();
+					})
+					.then(data => {
+						const locality = data.locality; // Neighborhood or locality
+						const principalSubdivision = data.principalSubdivision; // State or region
+
+						console.log('Detected locality:', locality);
+						console.log('Detected principalSubdivision:', principalSubdivision);
+
+						// Set the detected locality in the input field
+						if (locality) {
+							locationInput.value = `${locality}, ${principalSubdivision}`;
+						} else {
+							locationInput.value = 'Location not found';
+						}
+					})
+					.catch(error => {
+						console.error('Error in reverse geocoding:', error);
+						locationInput.value = 'Error detecting location';
+					});
+			}
+
+			function error(err) {
+				console.warn(`ERROR(${err.code}): ${err.message}`);
+				locationInput.value = 'Unable to detect location';
+			}
+		});
+
+		// Header links by problem
+		function navigateToPage() {
+			var select = document.getElementById("problemSelect");
+			var selectedValue = select.options[select.selectedIndex].value;
+			if (selectedValue) {
+				window.location.href = selectedValue;
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>

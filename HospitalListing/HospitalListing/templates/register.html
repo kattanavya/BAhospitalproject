@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Hospital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(124, 124, 220);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .hospital-registration {
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hospital-registration:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .hospital-registration h4 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .hospital-registration label {
+            display: block;
+            margin: 10px 0 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .hospital-registration input,
+        .hospital-registration textarea {
+            width: 90%;
+            padding: 10px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            color: #333;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hospital-registration input:focus,
+        .hospital-registration textarea:focus {
+            border-color: #795fff;
+            box-shadow: 0 0 8px rgba(121, 95, 255, 0.3);
+            outline: none;
+        }
+
+        .hospital-registration button {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: none;
+            background-color: #795fff;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .hospital-registration button:hover {
+            background-color: #684bd6;
+            transform: translateY(-2px);
+        }
+
+        .hospital-registration button:active {
+            background-color: #583bb5;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .hospital-registration {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hospital-registration">
+        <h4>Register Your Hospital</h4>
+        <form id="hospitalRegistrationForm" action="/register" method="POST" enctype="multipart/form-data">
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" name="hospitalName" placeholder="Hospital Name" required>
+
+            <label for="status">Availability Status:</label>
+            <input type="text" id="status" name="status" placeholder="Available Now / Not Available" required>
+
+            <label for="patientcount">Number of patients deals with:</label>
+            <input type="text" id="patientcount" name="patientcount" placeholder="e.g., 100 patients per day" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Brief description of the hospital" required></textarea>
+
+            <label for="experience">Years of Experience:</label>
+            <input type="text" id="experience" name="experience" placeholder="Years of Experience" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Hospital Address" required>
+
+            <label for="timings">Hospital Timings:</label>
+            <input type="text" id="timings" name="timings" placeholder="(10:00 AM to 6:00 PM OR 24 hrs)" required>
+
+            <label for="price">OP Price:</label>
+            <input type="text" id="price" name="price" placeholder="OP Price (e.g., ₹1000)" required>
+
+            <label for="opendays">Hospital Open Days:</label>
+            <input type="text" id="opendays" name="opendays" placeholder="Days available">
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" placeholder="category">
+
+            <button type="submit">Register Hospital</button>
+        </form>
+    </div>
+</body>
+</html>
